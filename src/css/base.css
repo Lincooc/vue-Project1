@@ -1,0 +1,77 @@
+a {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+.bolder{
+    font-weight: bold;
+}
+@media screen and (max-width:1084px) {
+
+
+    .products {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .M365 {
+        padding: 66px 0;
+        display: block;
+        width: 98%;
+        margin: auto;
+    }
+    .follow{
+        display: flex;
+        padding: 66px 24px;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: .75rem;
+        padding-left: 11px;
+    }
+
+    .M365 .explain {
+        color: #0067b8;
+    }
+
+    .bottom dl {
+        width: 33.33333%;
+    }
+}
+
+@media screen and (max-width:860px) {
+
+
+
+    .M365 {
+        padding: 0 0;
+    }
+
+}
+
+@media screen and (max-width:539px) {
+    .bottom1 dl {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1084px) {
+
+    .title {
+        font-size: 1.8125rem;
+        margin-bottom: 1rem;
+        padding-left: 78px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #dce4f6;
+}

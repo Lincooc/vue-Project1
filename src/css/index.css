@@ -1,0 +1,361 @@
+/* 轮播图 */
+.carousel{
+    margin-top: 56px;
+}
+.inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.carousel .carousel-control-prev {
+    position: relative;
+    width: 10%;
+}
+
+.carousel .carousel-control-next {
+    position: relative;
+    width: 10%;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-indicators {
+    bottom: 3px;
+    width: 7%;
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.carousel .carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-size: 70%;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+/* 图表区 */
+.pic {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-inline-start: 0;
+    margin-top: 55px;
+    flex-wrap: wrap;
+}
+
+.pic li {
+    padding: 16px 24px;
+    ;
+}
+
+.pic img {
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+.pic .text {
+    color: #0067b8;
+    border-bottom: #0067b8 1.5px solid;
+    font-weight: bolder;
+}
+
+.pic .text:hover {
+    text-decoration: none;
+}
+
+/* 商品区 */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 66px;
+    margin: 0 auto;
+
+}
+
+.products .col-md-6 {
+    padding: 0 12px;
+}
+
+.products .card {
+    height: 100%;
+    border: #f0f0f0 3px solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .25);
+}
+
+.products img {
+    width: 100%;
+
+}
+
+.products .tap .new {
+    padding: 3px;
+    background-color: #ffb900;
+    font-weight: bolder;
+
+}
+
+.products h3 {
+
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.products .text {
+    padding: 3px;
+    flex: 1 1 auto;
+}
+
+.products .shop {
+    min-height: 2.5rem;
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
+}
+
+.products button,
+.group button {
+    color: white;
+    font-weight: bolder;
+    padding: 7px;
+    border: 0;
+    background-color: #68a92e;
+}
+
+.products button:hover {
+    background-color: #517d41;
+}
+
+/* 商业版 */
+.commerce {
+    padding-top: 0;
+}
+
+.commerce .name {
+    color: #0067b8;
+    display: inline-block;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+
+.commerce .name:hover {
+    text-decoration: underline;
+}
+
+.title {
+
+    font-weight: bolder;
+}
+
+/* M365图片 */
+
+
+
+@media screen and (min-width:860px) {
+    .M365 .text {
+        width: 95%;
+        margin: 0 auto;
+        /* margin-top: -389px; */
+        margin-top: -41px;
+        background: 255, 255, 255;
+        background: #ffffff;
+        position: relative;
+        box-shadow: 0 .1875rem .4375rem 0 rgba(0, 0, 0, .13), 0 .0625rem .125rem 0 rgba(0, 0, 0, .11);
+    }
+
+    .M365 h2 {
+        font-size: 1.5rem;
+        margin-bottom: .75rem;
+
+    }
+
+    .M365 button {
+        margin-right: 24px;
+    }
+
+
+}
+
+@media screen and (min-width:1084px) {
+    .M365 .text {
+        width: 27%;
+        position: absolute;
+        left: 0;
+        transform: translate(31%, -50%);
+        top: 50%;
+        box-shadow: none;
+        background: 0;
+
+    }
+
+
+    .M365 h2 {
+        font-size: 1.8125rem;
+        margin-bottom: 1rem;
+    }
+
+    .M365 a {
+        display: block;
+
+    }
+
+    .M365 .explain {
+        font-weight: bolder;
+        padding-top: 14px;
+    }
+
+    .M365 .explain:hover {
+        color: #000;
+    }
+}
+
+@media screen and (min-width:1400px) {
+
+
+    .M365 h2 {
+        font-size: 2.3125rem;
+        margin-bottom: 1.25rem;
+
+    }
+}
+
+.M365 {
+    padding: 33px 66px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.M365 img {
+    width: 100%;
+}
+
+.M365 h2 {
+    font-weight: bolder;
+}
+
+.M365 .explain {
+    font-weight: bolder;
+}
+
+.carbonH3{
+    text-align: center;
+    color: #68a92e;
+
+}
+.carbon {
+    padding: 10px 66px;
+    padding-bottom: 20px;
+}
+.carbonComp button{
+    border: 0;
+    border-radius: 90px;
+    background-color: #68a92e;
+    color: #f0f0f0;
+    padding: 10px 49px;
+}
+.carbonComp{
+    display: block;
+    text-align: center;
+}
+/* 关注Microsoft */
+.follow {
+    padding-left: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.follow ul {
+    display: flex;
+}
+
+.follow .wechat {
+    padding-right: 18px;
+}
+
+.follow img {
+    width: 32px;
+}
+
+
+/* 返回页首 */
+.back {
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+.back button {
+    background-color: #fffae8;
+    color: black;
+    padding: 10px 12px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.back button:hover {
+    background-color: #ffffff;
+    box-shadow: 0 .125rem .25rem 0 rgba(0, 0, 0, .13), 0 0 .0625rem 0 rgba(0, 0, 0, .11);
+}
+
+.back .text {
+    padding-right: 9px;
+    padding-left: 4px;
+}
+
+/* 底部1 */
+
+.bottom {
+    background: #fffefb;
+    margin-top: 48px;
+}
+
+.bottom1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 5%;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+}
+
+.bottom1 dt,
+.bottom1 dd {}
+
+.bottom1 dt {
+    font-size: 15px;
+    padding: 36px 0 4px;
+    color: #616161;
+}
+
+.bottom1 dd {
+    font-size: 11px;
+    padding: 8px 0;
+    color: #686589;
+}
+
+.bottom1 a:hover {
+    color: #181818;
+}
+
+.bottom1 dl {
+    min-height: 1px;
+    padding: 0 12px;
+    width: 16.6666666667%;
+}

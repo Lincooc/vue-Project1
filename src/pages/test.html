@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <!-- 搜索框 -->
+    <div class="search-container">
+      <input
+        type="text"
+        v-model="keyword"
+        placeholder="请输入搜索关键词"
+        @keyup.enter="search"
+        class="search-input"
+      />
+      <button @click="search" class="search-btn">搜索</button>
+    </div>
+
+    <!-- 搜索结果展示 -->
+    <div v-if="results.length > 0" class="results">
+      <h3>搜索结果：</h3>
+      <ul>
+        <li v-for="item in results" :key="item.proId" class="result-item">
+          <img :src="`/uploads/${item.imgName}`" alt="商品图片" class="item-img" />
+          <div class="item-info">
+            <h4>{{ item.name }}</h4>f
+            <p>{{ item.description }}</p>
+            <p>价格：{{ item.price }} 元</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div v-else-if="keyword && !loading">没有找到相关商品。</div>
+    <div v-else-if="loading">正在搜索，请稍候...</div>
+  </div>
+</template>
