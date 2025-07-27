@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* 主容器 */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* 订单模块 */
+.order-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+.section-title {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+/* 地址选择 */
+.address-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.address-info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.address-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.default-tag {
+    background: #ff0036;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* 商品列表 */
+.product-list {
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.product-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-spec {
+    color: #999;
+    font-size: 12px;
+}
+
+.product-price {
+    width: 150px;
+    text-align: right;
+}
+
+/* 支付方式 */
+.payment-methods {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-item.active {
+    border-color: #ff0036;
+}
+
+.payment-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* 价格汇总 */
+.price-summary {
+    text-align: right;
+    padding: 15px;
+}
+
+.price-line {
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-size: 18px;
+    color: #ff0036;
+    font-weight: bold;
+}
+
+/* 提交按钮 */
+.submit-btn {
+    background: #ff0036;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #e6002e;
+}
+.del-btn{
+    margin-left: 15px;
+
+}
+.confirm{
+    display: block;
+    margin: auto;
+    width: 15%;
+    padding: 5px;
+    background-color: #d4cece;
+    border: none;
+}

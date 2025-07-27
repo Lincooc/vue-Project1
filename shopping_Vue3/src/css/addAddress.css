@@ -1,0 +1,96 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* 表单容器 */
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        /* 表单标题 */
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 表单字段 */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #ff0036;
+            outline: none;
+        }
+
+        /* 省市区选择 */
+        .region-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .region-group select {
+            flex: 1;
+        }
+
+        /* 默认地址选项 */
+        .default-address {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .default-address input {
+            width: auto;
+        }
+
+        /* 提交按钮 */
+        .submit-btn {
+            width: 100%;
+            background: #ff0036;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background: #e6002e;
+        }

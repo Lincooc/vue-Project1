@@ -1,0 +1,169 @@
+/* 导航栏 */
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #fffae7;
+}
+.navbar button {
+    border: 0;
+}
+
+.navbar .collapse .nav-link:hover {
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+.navbar .collapse .nav-link {
+    line-height: 40px;
+    color: #000;
+}
+
+.navbar .navbar-brand img {
+    height: 25px;
+    vertical-align: text-bottom;
+}
+
+.navbar .ulRight {
+    flex-direction: row;
+}
+
+.navbar .ulRight .nav-link {
+
+    line-height: 25px;
+    color: #000;
+}
+
+.navbar .all:hover {
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+.search:hover>.searchContent {
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+.shopping:hover>.shoppingContent {
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+.navbar .navbar-nav img {
+    height: 27px;
+    vertical-align: middle;
+}
+
+.navbar .ulRight span {
+    padding-right: 5px;
+
+}
+
+.navbar .foldUl {
+    margin-left: 30px;
+}
+/* 所有Microsoft */
+.allHide {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 58px;
+    width: 100%;
+    background-color: #f2f2f2;
+    z-index: 100;
+}
+
+.allHide dl {
+    display: inline-block;
+    line-height: 40px;
+    text-align: left;
+}
+
+.allHide dt {
+    padding-top: 10px;
+}
+
+.map {
+    width: 100%;
+    text-align: center;
+    background-color: #e6e6e6;
+    line-height: 40px;
+}
+
+.unfold {
+    float: right;
+    margin-right: 10px;
+}
+
+/* 媒体查询 */
+@media screen and (max-width:1200px) {
+
+    .searchContent,
+    .shoppingContent,
+    .signUpContent {
+        display: none;
+    }
+
+    .navbar .ulRight .nav-link {
+        padding-left: 14px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 94%;
+        background-color: #f2f2f2;
+        z-index: 100;
+
+    }
+
+    .navbar-collapse .nav-item {
+        border-bottom: 1px #e8e8e8 solid;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 28px;
+    }
+
+    .navbar .collapse .nav-link:hover {
+        border-bottom: 0;
+        color: #000;
+    }
+
+    button {
+        order: 0;
+    }
+
+    .navbar-brand {
+        order: 1;
+        margin: auto;
+    }
+
+    .ulRight {
+        order: 2;
+    }
+
+    .all {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:993px) {
+    .nav-link {
+        display: inline;
+    }
+}

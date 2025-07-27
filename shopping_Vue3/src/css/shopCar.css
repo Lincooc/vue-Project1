@@ -1,0 +1,401 @@
+/* 导航栏 */
+.bolder {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.bottom {
+    clear: both;
+}
+
+/* 商品区 */
+
+
+
+.content {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    width: 100%;
+    color: #737373;
+}
+
+.cart-text {
+    font-size: 24px;
+    margin: 16px 0;
+    line-height: normal;
+}
+
+.content span {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.content .no-itembox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+/* 购物车内容 */
+.shopping .delete {
+    color: #0b6dbb;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+
+tbody {
+    border-top: 1px solid #d2d2d2;
+    font-size: 16px;
+}
+
+table {
+    width: 75.75%;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.package td {
+    color: #000;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding-left: 18px;
+}
+
+.package .all-price {
+    padding-right: 18px;
+}
+
+.shopping-left {
+    float: left;
+    width: 80px;
+}
+
+.shopping-right {
+    width: calc(100% - 80px);
+    float: left;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.numText {
+    display: none
+}
+
+.inform-right {
+    text-align: right;
+    padding-right: 18px;
+}
+
+.inform-left {
+    float: left;
+    max-width: 65px;
+}
+
+.cart-tip {
+    font-size: 12px;
+    color: #737373;
+    padding-top: 17px;
+}
+
+
+
+/* 右边 */
+
+
+.priceSum {
+    background: #f5f5f5;
+    margin-bottom: 25px;
+    padding: 1px 15px 25px;
+}
+
+.priceSum .priceSum-t .priceSum-t-2 {
+    font-weight: bold;
+}
+
+.priceSum-t-1,
+.priceSum-t-2 {
+    display: flex;
+}
+
+.priceSum button {
+    background-color: #0067b8;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    height: 40px;
+}
+
+.priceSum-m,
+.priceSum-b-2,
+.priceSum-b-3 {
+    color: #666;
+    font-size: 14px;
+    ;
+}
+
+.left,
+.right {
+    padding-bottom: 15px;
+
+}
+
+.priceSum-b-1 {
+    font-size: 14px;
+}
+
+.priceSum [class^="icon"] {
+    font-size: 30px;
+    padding-right: 6px;
+}
+
+[class^="sale"] {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.priceSum-m,
+.priceSum-b-2,
+.priceSum-b-3,
+.priceSum .endbtn {
+    margin-bottom: 15px;
+}
+
+.priceSum-b-1 {
+    overflow: hidden;
+}
+.num {
+        padding-left: 0;
+        min-width: 40px;
+        max-width: 100px;
+        text-align: center;
+        border: 0;
+        background-color: #dce4f5;
+
+    }
+.num:focus{
+        outline: none; 
+        background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .shopCar {
+
+        max-width: 1600px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0;
+
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .shopping img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .shopping {
+        margin-bottom: 14px;
+    }
+
+    .package td {
+        width: 100%;
+        height: 56px;
+    }
+
+    .shopping-right .text {
+        float: left;
+        width: 50%;
+    }
+
+    .inform-left {
+        width: 50%;
+
+    }
+    
+
+    .shopping .delete {
+        font-size: 14px;
+    }
+
+    .list tbody {
+        font-size: 16px;
+    }
+
+    .list .text-b {
+        font-size: 14px;
+    }
+
+    .shopping {
+        padding: 16px 36px 16px 0;
+    }
+
+    .priceSum .priceSum-t {
+        font-size: 18px;
+    }
+
+    .priceSum {
+        padding-top: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 21.25%;
+        float: right;
+        font-size: 14px;
+    }
+
+    .priceSum .endbtn {
+        width: 100%;
+    }
+
+    .priceSum .mobliebtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        min-height: 250px;
+    }
+
+    .cart-text {
+        margin-top: 16px;
+        margin-left: 10px;
+        margin-bottom: 12px;
+
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .cart-text {
+        font-size: 18px;
+
+    }
+
+    .shopping img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .shopping {
+        margin-bottom: 8px;
+    }
+
+    .shopping-right {
+
+        float: left;
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    .shopping .numText {
+        display: flex;
+        align-items: center;
+    }
+
+    .inform-left {
+        display: flex;
+
+    }
+
+.num{
+        height: 30px;
+        margin-top: 17px;
+        margin-left: 10px;
+    }
+    
+
+    .shopping .delete {
+        font-size: 12px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list tbody {
+        font-size: 12px;
+    }
+
+    .list .text {
+        font-size: 14px;
+    }
+
+    .priceSum .priceSum-t {
+        font-size: 16px;
+    }
+
+    .inform .num {
+        font-size: 14px;
+    }
+
+    .cart-tip {
+        order: 2;
+    }
+
+    .priceSum {
+        padding: 25px 28px 30px 20px;
+        order: 1;
+        width: 100%;
+        margin: 24px 18px 40px;
+    }
+
+    .priceSum .endbtn {
+        display: none;
+    }
+
+    .priceSum .mobliebtn {
+        position: fixed;
+        min-height: 55px;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+        left: 0;
+        z-index: 99;
+
+    }
+
+    .mobliebtn .btn-left {
+        display: flex;
+        font-weight: bold;
+        float: left;
+        height: 55px;
+        padding-left: 20px;
+        justify-content: center;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .mobliebtn .btn-left-2 {
+        padding-left: 5px;
+    }
+
+    .mobliebtn button {
+        min-width: 114px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 7px;
+    }
+}
+
+.clear {
+    text-align: right;
+    color: #0067b8;
+    font-size: 14px;
+    float: right;
+}
